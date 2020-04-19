@@ -62,5 +62,6 @@ int main()
 {
   Solution sol;
   vector<int> input = {1, 2, 2};
+  vector<int> inpu2 = {1, 0, 2};
   cout << sol.candy(input);
 }
