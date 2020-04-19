@@ -13,11 +13,11 @@ public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
 
        int  ysize = matrix.size() - 1;
-       int  xsize = matrix.size();
         for(int y = 0; y < ysize; y++)
         {
             if (matrix[y][0] <= target && matrix[y + 1][0] > target)
             {
+                int xsize = matrix[y].size();
                 for(int x = 0; x < xsize; x++)
                 {
                     if(matrix[y][x] == target)
